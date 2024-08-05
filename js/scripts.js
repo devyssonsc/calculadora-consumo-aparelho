@@ -38,3 +38,16 @@ close.addEventListener("click", () => {
     dias.value = '';
     preco.value = '';
 });
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        dialog.close();
+        dialog.style.opacity = 0;
+        dialog.style.zIndex = -1;
+
+        potencia.value = '';
+        tempo.value = '';
+        dias.value = '';
+        preco.value = '';
+    }
+});
