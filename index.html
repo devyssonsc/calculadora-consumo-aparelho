@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de consumo de aparelho</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Modal -->
+    <dialog>
+        <h3>Resultado:</h3>
+        <div class="result"></div>
+        <button class="btn btn-secondary" id="close">Fechar</button>
+    </dialog>
+    <!-- -->
+    <div class="container">
+        <h2>Calculadora de custo e consumo de energia elétrica</h2>
+        <div class="calculator-content">
+            <form>
+                <div class="form-group">
+                    <label for="potencia">Potência do aparelho (em watts):</label>
+                    <input class="form-control" type="number" name="potencia" id="potencia" required>
+                </div>
+                <div class="form-group">
+                    <label for="tempo">Tempo de uso diário (em horas):</label>
+                    <input class="form-control" type="number" name="tempo" id="tempo" required>
+                </div>
+
+                <div class="dias-preco-div">
+                    <div class="form-group">
+                        <label for="dias">Dias de uso no mês:</label>
+                        <input class="form-control" type="number" name="dias" id="dias" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Preço do kWh:</label>
+                        <input class="form-control" type="number" step="0.1" name="preco" id="preco"
+                            aria-describedby="precoHelp" required>
+                        <small id="precoHelp" class="form-text text-muted">Você pode encontrar na conta de luz.</small>
+                    </div>
+                </div>
+                <button class="btn btn-warning" type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
