@@ -25,7 +25,7 @@ frm.addEventListener("submit", (e) => {
     dialog.style.opacity = 1;
     dialog.style.zIndex = 9999;
 
-    resultado.innerHTML = `Consumo total: ${consumoTotal} kWh<br>Gasto total: R$ ${gastoTotal.toFixed(2)}<br>Consumo diário: ${consumoDiario.toFixed(2)} kWh<br>Gasto diário é de R$ ${gastoDiario.toFixed(2)}<br>Consumo mensal: ${consumoMensal.toFixed(2)} kWh`;
+    resultado.innerHTML = `Consumo total (em ${diasValue} dias): ${consumoTotal} kWh<br>Gasto total: R$ ${gastoTotal.toFixed(2)}<br>Consumo diário: ${consumoDiario.toFixed(2)} kWh<br>Gasto diário é de R$ ${gastoDiario.toFixed(2)}<br>Consumo mensal: ${consumoMensal.toFixed(2)} kWh`;
 });
 
 close.addEventListener("click", () => {
