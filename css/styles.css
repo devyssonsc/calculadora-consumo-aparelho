@@ -26,7 +26,7 @@ h2 {
 
 .calculator-content{
     background-color: #ddd;
-    width: 500px;
+    width: 600px;
     max-width: 90%;
     display: flex;
     flex-direction: column;
@@ -35,9 +35,15 @@ h2 {
     border-radius: 5px;
 }
 
-.dias-preco-div{
+.potencia-tempo-div, .dias-preco-div{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group{
+    width: 100%;
 }
 
 form{
@@ -72,6 +78,15 @@ dialog{
     opacity: 0;
     z-index: -1;
     transition: opacity .2s ease;
+}
+
+table{
+    max-width: 100%;
+    font-size: 0.8em;
+}
+
+.hide{
+    display: none;
 }
 
 @media screen and (max-width: 500px){
